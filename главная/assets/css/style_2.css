@@ -1,0 +1,440 @@
+@font-face {
+	font-family: "Impact";
+	src: url("../fonts/impact/Impact.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/impact/Impact.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/impact/Impact.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/impact/Impact.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/impact/Impact.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/impact/Impact.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/impact/Impact.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body{
+    /* background-color: #1a1a1a;
+    /* background: #000 url(../img/fon.jpg); Фоновый цвет и фоновый рисунок */
+	 background: #000 url(../img/fon2.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    /* background-size: 100%; */
+   margin: 0; 
+ 
+}
+
+.main{
+    float: left;
+    width: 35%;
+    margin-bottom: 50px;
+}
+.container {
+    width: 70%;
+    margin: 5vh auto;
+    margin-bottom: 0;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000000ce; 
+    color: #fff;
+    align-items: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #fff;
+    font-family: "Impact";
+    font-weight:100;
+    letter-spacing: 0.15em;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='text'] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 2px solid #4fb9ff;
+}
+
+
+.date_line{
+    width: 105%;
+    display: inline-flex;
+    text-align: center;
+    font-family: "Artifakt Element";
+    font-size: 12px;
+    
+}
+.date{
+    display: block;
+    width: 70%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    
+}
+
+input[type='radio'] {
+    accent-color: #4fb9ff;
+    
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #4fb9ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #387ba8;
+}
+
+.foget_pass{
+    color: #62aae6;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Artifakt Element";
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.content_2{
+    margin-top: 50px;
+    float: right;
+    width: 64%;
+}
+.container_2 {
+    width: 90%;
+    margin-bottom: 0;
+    border: none;
+    align-items: center;
+}
+.intro{
+    margin:3vh 0;
+    width: 100%;
+ 
+ 
+}
+.disctiption{
+    font-family: "Artifakt Element";
+    text-align: center;
+    color:#fff;
+}
+h3 {
+    color: #fff;
+    font-family: "Impact";
+    font-weight:100;
+    letter-spacing: 0.15em;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.moment_reg{
+    font-family: "Artifakt Element";
+    font-size: 11px;
+    text-align: center;
+    margin-top: -17px;
+    margin-bottom: 30px;
+    color: #c4c4c4;
+}
+
+
+/*REGIST_2*/
+input[type="checkbox"] {
+    display: none;
+}
+.check{
+    font-family: "Arial";
+}
+.custom-checkbox {
+  text-align: left;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #4fb9ff;
+  cursor: pointer;
+}
+.custom-checkbox-2{
+    display: flex;
+    width: 12px;
+    height: 12px;
+    
+    
+}
+
+input[type="checkbox"]:checked + .custom-checkbox{
+    background-color: #4fb9ff;
+   
+}
+
+/*FOOTER*/
+.foot{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    clear: both;
+    background-color: #080808;
+    position:static;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+}
+.footer{
+    text-align: center;
+}
+
+/*ERROR*/
+form .err p{
+    color: red;
+    font-family: 'Arial';
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1920px){
+    h2 {
+        margin-top: 10px;
+        font-size: 35px;
+    }
+    input, .button{
+        font-size: 15px;
+        padding: 13px;
+    }
+    .date_line{
+        font-size: 19px;
+    }
+    .foget_pass{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 50px;
+    }
+    .disctiption{
+        font-size: 20px;
+    }
+    .moment_reg{
+        font-size: 15px;
+    }
+    .next_button{
+        width: 60px;
+    }
+    .lable{
+        width: 100%;
+    }
+    .foget_pass{
+        font-size: 15px;
+    }
+    .error{
+        font-size: 15px;
+    }
+}
+
+/*@media only screen and (min-width: 2500px){
+    .intro{
+        width: 95%;
+    }
+    .foot{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        clear: both;
+        background-color: #080808;
+        position:absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 3000px){
+    h2 {
+        font-size: 60px;
+    }
+    input, .button, .error{
+        font-size: 31px;
+        padding: 20px;
+    }
+    .date_line{
+        font-size: 31px;
+    }
+    .foget_pass{
+        font-size: 31px;
+    }
+    h3{
+        font-size: 70px;
+    }
+    .disctiption{
+        font-size: 32px;
+    }
+    .moment_reg{
+        font-size: 29px;
+    }
+    .next_button{
+        width: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background: #1a1a1a;
+    }
+    .content_2{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .content_registration{
+        display: none;
+    }
+    .container {
+        width: 70%;
+        margin: 5vh auto;
+        margin-bottom: 2vh;
+        border: 1px solid #282828;
+        background-color: #282828;
+        
+    }
+    input{
+         padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        border: 2px solid #4fb9ff;
+    }
+    .date_line2{
+        display: inline-flex;
+        width: 105%;
+        margin-bottom: 0;
+    }
+    .logo{
+        width: 45%;
+        display: block;
+        margin: 5vh auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .foget_pass{
+        font-family: "Arial";
+        margin-bottom: 13px;
+    }
+    .content_reg{
+        display: block;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .regist{
+        font-family: "Arial";
+        font-size: 13px;
+        color:#62aae6;
+        margin-bottom: 10px;
+    }
+   .foot{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 380px) {
+    .logo{
+        width: 45%;
+    }
+    h2{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+   
+}
+
+@media only screen and (max-width: 480px) {
+    .logo{
+        margin: 3vh auto;
+        margin-bottom: 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    h2{
+        
+        margin-bottom: 20px;
+    }
+    .check{
+        margin: 20px 7%;
+    }
+    input[type="tel"],
+    input[type="password"], 
+    .name{
+        font-size: 14px;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom:10px;
+        padding: 10px;
+    }
+    .bd_date{
+        width: 80%;
+        margin-left: 7%;
+        
+    }
+    .button{
+        padding: 4%;
+        border-radius: 0px;
+        margin: auto;
+        width: 87%;
+        
+    }
+     .date_line2{
+        width: 91%;
+        margin-left: 7%;
+    }
+    .next{
+        margin-top: 10px;
+        margin-right: 7%;
+    }
+    .next_button{
+        width: 45px;
+    }
+    input[type="password"]{
+        font-family: "Arial";
+    }
+    .foget_pass{
+        font-size: 14px;
+    }
+    .regist{
+        font-size: 15px;
+    }
+    .error{
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Arial';
+        color: red;
+        margin: auto;
+        margin-top: 15px;
+        width: 80%;
+        
+        
+    } 
+
+}*/

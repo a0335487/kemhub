@@ -1,0 +1,259 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html,
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #d8d8d8;
+}
+div{
+    color: #d8d8d8;
+    font-size: 18px;
+}
+body{
+    background: #000 url(../img/фон2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0; 
+}
+a{
+    text-decoration: none;
+    color: #d8d8d8;
+}
+input{
+    /* padding: 5px 12px; */
+    display: block;
+    width: 100%;
+    border: 2px solid #4fb9ff;
+    /* line-height: 1.5rem; */
+    background: #e4f6ff;
+}
+p, li{
+    color:#313131;
+}
+
+
+/*HEADER*/
+header{
+    background: #131313;
+    height: 90px;
+}
+header h1{
+    margin-top: 23px;
+}
+
+header h1 a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header h1 a span{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4fb9ff;
+}
+header h1 a:hover{
+    color: #929292;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 30px;
+}
+header ul li a:hover{
+    background: #050505;
+    transition: 0.5s;
+    color: #4fb9ff;
+}
+header ul li ul{
+    position: absolute;
+    top: 88px;
+    right: 0px;
+    width: 195px;
+    z-index: 111;
+    display: none;
+   
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    float: left;
+    width: 100%;
+}
+header ul li ul li a{
+    background: #ececec;
+    color:#1b1b1b; 
+}
+
+
+/*FOOTER*/
+footer{
+    background: #000000ef;
+    padding: 20px;
+    position: relative;
+}
+.footer-content{
+    font-size: 1.1rem;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.footer-content p{
+    color:#d8d8d8;
+    padding-top: 20px;
+}
+.footer-content span{
+    color:#4fb9ff;
+}
+.logo{
+    margin: auto;
+    width: 150px;
+}
+
+/*SIDEBAR*/
+
+.sidebar{
+    margin: 3rem 0;
+    background: #4fb9ff;
+    min-height: 750px;
+}
+.sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar ul a{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 18px;
+    color: #383838;
+    display: block;
+    border-bottom: 2px solid #383838;
+}
+.sidebar ul a:hover{
+    padding-left: 10px;
+    transition: all 0.3s;
+    color: #383838;
+    text-decoration: none;
+}
+.posts{
+    margin: 3rem 0;
+    background: #000000c5;
+    height: 100%;
+    min-height: 750px;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+.posts h2{
+    text-align: center;
+    margin: 2rem 0 0.8rem 0;
+
+}
+.posts .title-table div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+    font-weight: 600;
+}
+.posts .post div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+.posts .post .red a{
+    color: #4fb9ff;
+}
+.posts .post .red a:hover{
+    color:#006db6;
+}
+.posts .post .del a{
+    color: red;
+}
+.posts .post .status a{
+    color: rgb(228, 224, 0);
+}
+.posts .post .status a:hover{
+    color: rgb(112, 110, 0);
+}
+.posts .post .del a:hover{
+    color: rgb(145, 0, 0);
+}
+.posts .post .id{
+    font-weight: 600;
+}
+
+/* .add-post form div{
+    margin: 1.5rem 0;
+} */
+.add-post form .form-post{
+    border: 2px solid #4fb9ff;
+    border-radius: 0;
+}
+.add-post form .form-post-ro{
+    border-radius: 0;
+    background: #dddddd;
+}
+.add-post form #editor{
+    color:#000;
+}
+.add-post form .p{
+    color:#4fb9ff;
+}
+.add-post form .up{
+    background: #4fb9ff;
+    border-color: #4fb9ff;
+    border-radius: 0;
+}
+
+.posts .btn-save{
+    border-radius: 0;
+    border: 2px solid rgb(0, 204, 0);
+    color: rgb(0, 204, 0);
+}
+.posts .btn-man{
+    border-radius: 0;
+    border: 2px solid orange;
+    color:orange;
+}
+.posts .btn-save:hover{
+    background: rgb(0, 204, 0);
+    color:#000;
+}
+.posts .btn-man:hover{
+    background: orange;
+    color:#000;
+}
+.posts .btn-primary{
+    padding: 5px 40px;
+    border-radius: 0;
+    border: 2px solid #ff0095;
+    background: none;
+    color: #ff0095;
+}
+.posts .btn-primary:hover{
+    background: #ff0095;
+    color:#000;
+}
+
+/*ERROR*/
+.err{
+    color: red;
+    font-style: italic;
+    list-style-type: none;
+}
